@@ -1,0 +1,19 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import {Slides, Slide, BG_DARK, Time, Code} from '@slides/slides';
+import Markdown from 'reveal.js/plugin/markdown/markdown';
+import Notes from 'reveal.js/plugin/notes/notes';
+import Highlight from 'reveal.js/plugin/highlight/highlight';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
+
+export function App() {
+  return (
+    <Slides plugins={[Markdown, Notes, Highlight]}>
+      <Slide>
+        <h1>Hello World</h1>
+      </Slide>
+    </Slides>
+  );
+}
+
+export default App;

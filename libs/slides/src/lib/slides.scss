@@ -1,0 +1,91 @@
+:root {
+  --r-main-font-size: 18px;
+  --r-background-color: #e5e5e5;
+  --r-main-font: 'Roboto', 'San Francisco', helvetica, arial, sans-serif !important;
+}
+
+//@import "reveal.js/dist/reset.css";
+@import "reveal.js/dist/reveal.css";
+//@import "reveal.js/dist/theme/white.css";
+@import "reveal.js/plugin/highlight/monokai.css";
+@import "./webslides/css/webslides.css";
+@import "./webslides/css/svg-icons.css";
+
+
+
+html {
+  font-size: 12px;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+p {
+  font-weight: 300 !important;
+}
+
+article {
+  width: 100%;
+}
+
+.art-text {
+  font-family: 'Pacifico', cursive;
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal.center .slides section {
+  min-height: 100vh !important;
+
+  .wrap {
+    max-height: 70%;
+  }
+}
+
+section {
+  padding: 1rem !important;
+  display: flex;
+  align-items: center;
+
+  &.fullscreen {
+    padding: 0 !important;
+
+    .wrap {
+      margin: 0 !important;
+      width: 100%;
+    }
+  }
+}
+
+.flexblock li p {
+  margin-top: 0;
+}
+
+.flexblock.steps li:nth-child(1) {
+  background-color: rgb(225, 192, 181);
+}
+.flexblock.steps li:nth-child(2) {
+  background-color: rgb(222, 166, 147);
+}
+.flexblock.steps li:nth-child(3) {
+  background-color: rgb(223, 121, 87);
+}
+.flexblock.steps li:nth-child(4) {
+  background-color: #e9531d;
+}
+
+pre {
+  code {
+    line-height: 2em;
+  }
+}
+
+.has-dark-background {
+  figcaption * {
+    color: var(--r-main-color) !important;
+  }
+}
+

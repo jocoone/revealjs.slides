@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "revealjs-react",
+  "version": "0.0.1",
+  "generators": {
+    "revealjs.react": {
+      "factory": "./src/generators/revealjs.react/generator",
+      "schema": "./src/generators/revealjs.react/schema.json",
+      "description": "revealjs.react generator"
+    }
+  }
+}
