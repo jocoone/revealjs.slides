@@ -1,9 +1,9 @@
-export const build = {
+export const build = (name: string) => ({
   "executor": "@nrwl/vite:build",
   "outputs": ["{options.outputPath}"],
   "defaultConfiguration": "production",
   "options": {
-    "outputPath": "dist/apps/demo"
+    "outputPath": `dist/apps/${name}`
   },
   "configurations": {
     "development": {
@@ -13,4 +13,4 @@ export const build = {
       "mode": "production"
     }
   }
-};
+});
