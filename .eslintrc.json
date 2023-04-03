@@ -24,7 +24,7 @@
               {
                 "sourceTag": "type:app",
                 "onlyDependOnLibsWithTags": [
-                  "*"
+                  "type:lib"
                 ]
               },
               {

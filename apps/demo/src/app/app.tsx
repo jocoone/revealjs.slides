@@ -1,10 +1,10 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import {Slides, Slide, BG_DARK, Time, Code} from '@revealjs.react/slides';
-import Markdown from 'reveal.js/plugin/markdown/markdown';
-import Notes from 'reveal.js/plugin/notes/notes';
-import Highlight from 'reveal.js/plugin/highlight/highlight';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
+import { BG_DARK, Code, Slide, Slides, Time } from "@slides/slides";
+import Markdown from "reveal.js/plugin/markdown/markdown";
+import Notes from "reveal.js/plugin/notes/notes";
+import Highlight from "reveal.js/plugin/highlight/highlight";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export function App() {
   return (
@@ -32,10 +32,10 @@ export function App() {
             <a href="../demos/why-webslides.html" title="Why WebSlides?">
               <figure>
                 <img alt="Thumbnail Why WebSlides?"
-                     src="https://webslides.tv/static/images/demos-why.png"/>
+                     src="https://webslides.tv/static/images/demos-why.png" />
                 <figcaption>
                   <h2>Why WebSlides?</h2>
-                  <Time time={new Date()}/>
+                  <Time time={new Date()} />
                 </figcaption>
               </figure>
             </a>
@@ -44,7 +44,7 @@ export function App() {
             <a href="../demos/landings.html" title="Landings">
               <figure>
                 <img alt="Thumbnail Landings"
-                     src="https://webslides.tv/static/images/demos-landings.png"/>
+                     src="https://webslides.tv/static/images/demos-landings.png" />
                 <figcaption>
                   <h2>Landings</h2>
                   <time dateTime="2017-01-07T19:21:26-08:00">Jan 07, 2017</time>
@@ -56,7 +56,7 @@ export function App() {
             <a href="../demos/portfolios.html" title="Portfolios">
               <figure>
                 <img alt="Thumbnail Portfolios"
-                     src="https://webslides.tv/static/images/demos-portfolios.png"/>
+                     src="https://webslides.tv/static/images/demos-portfolios.png" />
                 <figcaption>
                   <h2>Portfolios</h2>
                   <time dateTime="2017-01-06T21:22:21-08:00">Jan 06, 2017</time>
@@ -79,7 +79,7 @@ export function App() {
           <div className="column">
             <Code data-noescape data-trim code={`<div className="column">
     <h3><strong>WebSlides is really easy</strong></h3>
-</div>`}/>
+</div>`} />
           </div>
         </div>
       </Slide>
@@ -98,7 +98,7 @@ export function App() {
           <li>
             <div>
               <h2>
-                <FontAwesomeIcon icon={faArrowRight}/>
+                <FontAwesomeIcon icon={faArrowRight} />
                 Permalinks
               </h2>
               Go to a specific slide.
@@ -169,13 +169,13 @@ export function App() {
       <Slide>
         <img className="alignright size-50"
              src="https://plus.unsplash.com/premium_photo-1676823570630-be7b7e1ce1bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-             alt="iPhone"/>
+             alt="iPhone" />
         <h2>img.size-50</h2>
         <p><code>img.alignright.size-50</code></p>
         <p>Jobs unveiled the iPhone to the public on January 9, 2007, at the Macworld 2007 convention at the
           Moscone Center in San Francisco. Apple sold 6.1 million first generation iPhone units over five
           quarters.</p>
-        <p><strong>Image size recommended</strong>:<br/> 800x600px / 600x450px.</p>
+        <p><strong>Image size recommended</strong>:<br /> 800x600px / 600x450px.</p>
       </Slide>
       <Slide>
         <h3>ul.flexblock.steps</h3>
