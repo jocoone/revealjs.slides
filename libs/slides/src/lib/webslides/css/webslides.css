@@ -4406,24 +4406,24 @@ flexblock.steps
 
 .steps li:hover,
 .steps.blink li:hover > a {
-  background-color: #b8cef7;
+  background-color: #e8eef7;
 }
 
 @media (min-width: 1024px) {
   .process.step-2 {
-    border-left-color: #e8eef7;
+    border-left-color: rgb(225, 192, 181);
   }
 
   .process.step-3 {
-    border-left-color: #dde5f3;
+    border-left-color: rgb(222, 166, 147);
   }
 
   .process.step-4 {
-    border-left-color: #cdd8ec;
+    border-left-color: rgb(223, 121, 87);;
   }
 
   .steps li:hover + li [class*='step-'] {
-    border-left-color: #b8cef7;
+    border-left-color: #e8eef7;
   }
 }
 

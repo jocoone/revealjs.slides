@@ -10,15 +10,15 @@ export interface SlidesProps {
 export function Slides({plugins = [], children}: SlidesProps) {
   useEffect(() => {
     setTimeout(() => {
-      new Reveal( {
+      Reveal.initialize( {
         plugins,
         slideNumber: true,
         disableLayout: true,
         display: 'flex',
         hash: true
-      }).initialize();
+      });
     }, 1000);
-  }, []);
+  }, [plugins]);
 
   return (
     <>
